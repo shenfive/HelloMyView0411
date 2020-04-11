@@ -12,9 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        
+        
+        
     }
 
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        var newView = MyView(frame: CGRect(x: 10, y: 10, width: 100, height: 200))
+        self.view.addSubview(newView)
+        
+        
+    }
 }
 
