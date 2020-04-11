@@ -15,6 +15,7 @@
 		BA08203524415AD400CE046C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA08203324415AD400CE046C /* LaunchScreen.storyboard */; };
 		BA08203D24415B4800CE046C /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA08203C24415B4800CE046C /* MyView.xib */; };
 		BA08203F24415B9500CE046C /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08203E24415B9500CE046C /* MyView.swift */; };
+		BA0820432441633100CE046C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0820412441633100CE046C /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		BA08203624415AD400CE046C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA08203C24415B4800CE046C /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 		BA08203E24415B9500CE046C /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		BA0820402441633000CE046C /* HelloMyView0411-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloMyView0411-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA0820412441633100CE046C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BA0820422441633100CE046C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,12 @@
 				BA08202E24415AD100CE046C /* Main.storyboard */,
 				BA08203124415AD400CE046C /* Assets.xcassets */,
 				BA08203324415AD400CE046C /* LaunchScreen.storyboard */,
+				BA0820422441633100CE046C /* Reachability.h */,
+				BA0820412441633100CE046C /* Reachability.m */,
 				BA08203624415AD400CE046C /* Info.plist */,
 				BA08203C24415B4800CE046C /* MyView.xib */,
 				BA08203E24415B9500CE046C /* MyView.swift */,
+				BA0820402441633000CE046C /* HelloMyView0411-Bridging-Header.h */,
 			);
 			path = HelloMyView0411;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 				TargetAttributes = {
 					BA08202424415AD100CE046C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -149,6 +157,7 @@
 				BA08202D24415AD100CE046C /* ViewController.swift in Sources */,
 				BA08202924415AD100CE046C /* AppDelegate.swift in Sources */,
 				BA08202B24415AD100CE046C /* SceneDelegate.swift in Sources */,
+				BA0820432441633100CE046C /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = HelloMyView0411/Info.plist;
@@ -301,6 +311,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idev.sjw.HelloMyView0411;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloMyView0411/HelloMyView0411-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = HelloMyView0411/Info.plist;
@@ -319,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idev.sjw.HelloMyView0411;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloMyView0411/HelloMyView0411-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
